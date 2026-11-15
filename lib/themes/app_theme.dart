@@ -1,20 +1,25 @@
 import 'package:flutter/material.dart';
 
-/// Notifier global: alterar o valor reconstrói o MaterialApp inteiro.
+
 final ValueNotifier<ThemeMode> themeNotifier = ValueNotifier(ThemeMode.light);
+
+
+const Color corApp = Colors.pink;
 
 class AppTheme {
   static final ThemeData lightTheme = ThemeData(
     useMaterial3: true,
-    colorScheme: ColorScheme.fromSeed(seedColor: Colors.indigo),
-    inputDecorationTheme: const InputDecorationTheme(border: OutlineInputBorder()),
+    colorScheme: ColorScheme.fromSeed(seedColor: corApp),
+    inputDecorationTheme:
+        const InputDecorationTheme(border: OutlineInputBorder()),
   );
 
   static final ThemeData darkTheme = ThemeData(
     useMaterial3: true,
-    colorScheme: ColorScheme.fromSeed(
-        seedColor: Colors.indigo, brightness: Brightness.dark),
-    inputDecorationTheme: const InputDecorationTheme(border: OutlineInputBorder()),
+    colorScheme:
+        ColorScheme.fromSeed(seedColor: corApp, brightness: Brightness.dark),
+    inputDecorationTheme:
+        const InputDecorationTheme(border: OutlineInputBorder()),
   );
 
   static Color corPrioridade(String p) {

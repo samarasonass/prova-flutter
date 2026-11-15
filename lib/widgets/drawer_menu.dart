@@ -3,6 +3,9 @@ import 'package:flutter/material.dart';
 import '../models/usuario.dart';
 import '../services/auth_service.dart';
 
+const Color corMenu = Color(0xFFF8BBD0); // rosa claro
+const Color corDestaque = Color(0xFFC2185B); // rosa escuro (textos e ícone)
+
 class DrawerMenu extends StatelessWidget {
   final String rotaAtual;
   const DrawerMenu({super.key, required this.rotaAtual});
@@ -25,6 +28,8 @@ class DrawerMenu extends StatelessWidget {
         leading: Icon(icone),
         title: Text(texto),
         selected: rotaAtual == rota,
+        selectedColor: corDestaque,
+        selectedTileColor: corMenu.withValues(alpha: 0.5),
         onTap: () => _ir(c, rota),
       );
 
@@ -39,19 +44,31 @@ class DrawerMenu extends StatelessWidget {
             padding: EdgeInsets.zero,
             children: [
               UserAccountsDrawerHeader(
-                accountName: Text(u?.nome ?? ''),
-                accountEmail: Text(u?.email ?? ''),
+                decoration: const BoxDecoration(color: corMenu),
+                accountName: Text(
+                  u?.nome ?? '',
+                  style: const TextStyle(
+                      color: Colors.black87, fontWeight: FontWeight.bold),
+                ),
+                accountEmail: Text(
+                  u?.email ?? '',
+                  style: const TextStyle(color: Colors.black54),
+                ),
                 currentAccountPicture: CircleAvatar(
+                  backgroundColor: Colors.white,
                   child: Text(
-                    (u?.nome.isNotEmpty ?? false) ? u!.nome[0].toUpperCase() : '?',
-                    style: const TextStyle(fontSize: 28),
+                    (u?.nome.isNotEmpty ?? false)
+                        ? u!.nome[0].toUpperCase()
+                        : '?',
+                    style: const TextStyle(fontSize: 28, color: corDestaque),
                   ),
                 ),
               ),
               _item(context, Icons.home, 'Início', '/home'),
               _item(context, Icons.checklist, 'Minhas tarefas', '/tarefas'),
               _item(context, Icons.settings, 'Configurações', '/configuracoes'),
-              _item(context, Icons.info_outline, 'Sobre o aplicativo', '/sobre'),
+              _item(
+                  context, Icons.info_outline, 'Sobre o aplicativo', '/sobre'),
               const Divider(),
               ListTile(
                 leading: const Icon(Icons.logout),
