@@ -43,31 +43,32 @@ tarefas/{uid}/{id}      -> { titulo, descricao, dataVencimento, prioridade, conc
 `screens/` · `widgets/drawer_menu.dart` · `themes/app_theme.dart`
 
 ## Capturas de tela do app
-### Login
-![Login](screenshots/login.png)
 
-### Cadastro de novo ususario
-![novo usuario](screenshots/cadastro-usuario.png)
+### Login
+<img src="screenshots/login.png" width="250">
+
+### Cadastro de novo usuário
+<img src="screenshots/cadastro-usuario.png" width="250">
 
 ### Tela inicial
-![inicial](screenshots/tela-inicial.png)
+<img src="screenshots/tela-inicial.png" width="250">
 
 ### Menu lateral
-![inicial](screenshots/menu-lateral.png)
+<img src="screenshots/menu-lateral.png" width="250">
 
 ### Cadastro de nova tarefa
-![inicial](screenshots/cadastro-nova-tarela.png)
+<img src="screenshots/cadastro-nova-tarela.png" width="250">
 
 ### Listagem das tarefas
-![inicial](screenshots/listagem-tarefas.png)
+<img src="screenshots/listagem-tarefas.png" width="250">
 
 ### Gerenciar tarefas
-![inicial](screenshots/gerenciamento.png)
+<img src="screenshots/gerenciamento.png" width="250">
 
 ### Editar tarefas
-![inicial](screenshots/editar.png)
+<img src="screenshots/editar.png" width="250">
 
-### Dark
-![inicial](screenshots/dark.png)
+### Tema escuro
+<img src="screenshots/dark.png" width="250">
 
 
