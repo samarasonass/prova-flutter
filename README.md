@@ -1,4 +1,5 @@
-# Minhas Tarefas – P2 Programação Mobile
+# Minhas Tarefas – Prova da P2 Programação Mobile
+# Aluna: Samara Sona Fernandes
 
 Aplicativo Flutter de gerenciamento de tarefas com Firebase Authentication (e-mail/senha),
 Firebase Realtime Database, SharedPreferences (tema) e Drawer.
@@ -41,6 +42,32 @@ tarefas/{uid}/{id}      -> { titulo, descricao, dataVencimento, prioridade, conc
 `models/` (Usuario, Tarefa) · `services/` (auth, firebase, preferences) ·
 `screens/` · `widgets/drawer_menu.dart` · `themes/app_theme.dart`
 
-## Capturas de tela
-Adicione as imagens na pasta `screenshots/` e referencie aqui.
-# prova-flutter
+## Capturas de tela do app
+### Login
+![Login](screenshots/login.png)
+
+### Cadastro de novo ususario
+![novo usuario](screenshots/cadastro-usuario.png)
+
+### Tela inicial
+![inicial](screenshots/tela-inicial.png)
+
+### Menu lateral
+![inicial](screenshots/menu-lateral.png)
+
+### Cadastro de nova tarefa
+![inicial](screenshots/cadastro-nova-tarela.png)
+
+### Listagem das tarefas
+![inicial](screenshots/listagem-tarefas.png)
+
+### Gerenciar tarefas
+![inicial](screenshots/gerenciamento.png)
+
+### Editar tarefas
+![inicial](screenshots/editar.png)
+
+### Dark
+![inicial](screenshots/dark.png)
+
+
